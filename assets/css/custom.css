@@ -442,11 +442,15 @@ input[type="submit"].primary:hover,
   }
 
   .features .icon {
-    width: 80%;
+    width: 90%;
     text-align: center;
   }
 
   #footer {
     padding-top: 0;
+  }
+
+  .spotlight .content h2 {
+    border-bottom: solid 1.5px #33e0c9bd;
   }
 }
