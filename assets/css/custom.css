@@ -638,3 +638,33 @@ input[type="submit"].primary:hover,
     text-align: center;
   }
 }
+
+
+.wrapper.style3.recomendaciones {
+   background-color: #33e0c9;
+    color: white;
+    padding: 60px 0 40px;
+}
+
+.wrapper.style3.recomendaciones .inner {
+   width: 80%;
+}
+
+.wrapper.style3.recomendaciones .inner .icon {
+   background-color: transparent;
+   padding: 10px 20px;
+}
+
+.wrapper.style3.recomendaciones p {
+   background-color: #33e0c9;
+    color: white;
+    text-align: center;
+    font-style: italic;
+    font-weight: 300;
+}
+
+@media(max-width: 979px) {
+  .wrapper.style3.recomendaciones .inner {
+   width: 95%;
+}
+}
