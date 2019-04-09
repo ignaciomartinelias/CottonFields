@@ -200,13 +200,19 @@
             </p>
           </header>
           <section>
-            <form class="form-contacto" method="post" action="#">
+            <form
+              class="form-contacto"
+              id="ajax-contact"
+              name="contactform"
+              method="POST"
+              action="send-form-email.php"
+            >
               <div class="row gtr-uniform">
                 <div class="col-4 col-12-medium col-12-xsmall">
                   <input
                     type="text"
-                    name="demo-nombre"
-                    id="demo-nombre"
+                    name="nombre"
+                    id="nombre"
                     value=""
                     placeholder="Nombre"
                     required
@@ -215,8 +221,8 @@
                 <div class="col-4 col-12-medium col-12-xsmall">
                   <input
                     type="email"
-                    name="demo-email"
-                    id="demo-email"
+                    name="email"
+                    id="email"
                     value=""
                     placeholder="Email"
                     required
@@ -225,8 +231,8 @@
                 <div class="col-4 col-12-medium col-12-xsmall">
                   <input
                     type="tel"
-                    name="demo-tel"
-                    id="demo-tel"
+                    name="telefono"
+                    id="telefono"
                     value=""
                     placeholder="Telefono"
                   />
@@ -234,25 +240,27 @@
                 <div class="col-4 col-6-small">
                   <input
                     type="radio"
-                    id="demo-priority-low"
-                    name="demo-priority"
+                    id="particular"
+                    name="tipo"
+                    value="particular"
                     checked
                   />
-                  <label for="demo-priority-low">Particular</label>
+                  <label for="particular">Particular</label>
                 </div>
                 <div class="col-4 col-6-small">
                   <input
                     type="radio"
-                    id="demo-priority-normal"
-                    name="demo-priority"
+                    id="empresa"
+                    name="tipo"
+                    value="empresa"
                   />
-                  <label for="demo-priority-normal">Empresa</label>
+                  <label for="empresa">Empresa</label>
                 </div>
 
                 <div class="col-12">
                   <textarea
-                    name="demo-message"
-                    id="demo-message"
+                    name="mensaje"
+                    id="mensaje"
                     placeholder="Escriba su consulta"
                     rows="6"
                     required
@@ -278,16 +286,41 @@
           <div class="columna-contacto">
             <h4>Mapa del Sitio</h4>
             <ul>
-              <li><a class="scrolly" href="#conocenos"><i class="fas fa-user-check"></i> Conocenos</a></li>
-              <li><a class="scrolly" href="#marcas"><i class="fas fa-tshirt"></i> Marcas</a></li>
-              <li><a class="scrolly" href="#nuestros-servicios"><i class="fas fa-headset"></i> Nuestros Servicios</a></li>
-              <li><a class="scrolly" href="#contacto"><i class="fas fa-file-signature"></i> Contacto</a></li>
+              <li>
+                <a class="scrolly" href="#conocenos"
+                  ><i class="fas fa-user-check"></i> Conocenos</a
+                >
+              </li>
+              <li>
+                <a class="scrolly" href="#marcas"
+                  ><i class="fas fa-tshirt"></i> Marcas</a
+                >
+              </li>
+              <li>
+                <a class="scrolly" href="#nuestros-servicios"
+                  ><i class="fas fa-headset"></i> Nuestros Servicios</a
+                >
+              </li>
+              <li>
+                <a class="scrolly" href="#contacto"
+                  ><i class="fas fa-file-signature"></i> Contacto</a
+                >
+              </li>
             </ul>
           </div>
           <div class="columna-contacto">
             <ul class="telefono">
-              <li><a href="tel:+5491144444444"><i class="fas fa-phone"></i> +54 11 4444-8888</a></li>
-              <li><a href="mailto:info@cottonfields.com.ar"><i class="fas fa-envelope"></i> info@cottonfields.com.ar</a></li>
+              <li>
+                <a href="tel:+5491144463874"
+                  ><i class="fas fa-phone"></i> +54 11 4446-3874</a
+                >
+              </li>
+              <li>
+                <a href="mailto:contacto@cottonfields.com.ar"
+                  ><i class="fas fa-envelope"></i>
+                  contacto@cottonfields.com.ar</a
+                >
+              </li>
             </ul>
             <h4>Suscribite a nuestro Newsletter!</h4>
             <div class="col-12">
@@ -331,7 +364,10 @@
             >
           </li>
           <li>
-            <a href="mailto:info@cottonfields.com.ar" class="icon fa-envelope-o" target="_blank"
+            <a
+              href="mailto:contacto@cottonfields.com.ar"
+              class="icon fa-envelope-o"
+              target="_blank"
               ><span class="label">Email</span></a
             >
           </li>
@@ -343,6 +379,29 @@
       </footer>
     </div>
 
+    <!-- Boton WP -->
+    <a
+      class="js-scroll-trigger whatsapp"
+      target="_blank"
+      href="https://wa.me/5491144463874"
+    >
+      <i class="fab fa-whatsapp"></i>
+    </a>
+    <!-- Fin Boton WP -->
+
+    <!-- Boton Subir -->
+    <a
+      href="#banner"
+      class="scrolly boton-subir"
+    >      <i class="fas fa-chevron-up"></i>
+    </a>
+    <!-- Fin Boton Subir -->
+
+    <!-- Mensaje Exito/Error Formulario Contacto -->
+    <div id="form-messages" class="mensaje-formulario">
+      Gracias por su consulta. Nos pondremos en contacto a la brevedad!
+    </div>
+
     <!-- Scripts -->
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/jquery.scrollex.min.js"></script>
@@ -351,5 +410,6 @@
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/index.js"></script>
   </body>
 </html>
