@@ -2,7 +2,7 @@
 if(isset($_POST['email'])) {
  
     // EDIT THE 2 LINES BELOW AS REQUIRED
-    $email_to = "imelias@live.com";
+    $email_to = "consultas@cottonfields.com.ar";
     $email_subject = "Contacto via Pagina Web Cotton Fields";
  
     function died($error) {
@@ -14,9 +14,9 @@ if(isset($_POST['email'])) {
  
      
  
-    $full_name = $_POST['nombre']; // required
+    $nombre = $_POST['nombre']; // required
     $email = $_POST['email']; // required
-    $telefono = $_POST['telefono']; // not required
+    $telefono = $_POST['telefono']; // required
     $tipo = $_POST['tipo']; // required
     $mensaje = $_POST['mensaje']; // required
  
