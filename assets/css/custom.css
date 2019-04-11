@@ -435,7 +435,7 @@ input[type="submit"].primary:hover,
   }
 
   .columna-contacto {
-    width: 90%;
+    width: 100%;
     margin: auto;
     display: flex;
     justify-content: center;
@@ -642,9 +642,10 @@ input[type="submit"].primary:hover,
 
 .wrapper.style3.recomendaciones {
    background-color: #33e0c9;
-    color: white;
+    color: #505393;
     padding: 60px 0 40px;
 }
+
 
 .wrapper.style3.recomendaciones .inner {
    width: 80%;
@@ -657,10 +658,10 @@ input[type="submit"].primary:hover,
 
 .wrapper.style3.recomendaciones p {
    background-color: #33e0c9;
-    color: white;
+    color: #505393;
     text-align: center;
     font-style: italic;
-    font-weight: 300;
+    font-weight: 500;
 }
 
 @media(max-width: 979px) {
